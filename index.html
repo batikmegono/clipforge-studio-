@@ -9,6 +9,85 @@
 <meta name="description"
 content="Potong video menjadi klip pendek untuk YouTube Shorts, TikTok, Instagram Reels dan Facebook. Coba demo 1x gratis.">
 
+<!-- ========================================
+META PIXEL
+PIXEL ID: 1062756373399058
+======================================== -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{
+    if(f.fbq)return;
+
+    n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments);
+    };
+
+    if(!f._fbq)f._fbq=n;
+
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s);
+
+}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+
+fbq(
+    'init',
+    '1062756373399058'
+);
+
+
+/* PAGE VIEW */
+
+fbq(
+    'track',
+    'PageView'
+);
+
+
+/* ORANG MELIHAT PRODUK */
+
+fbq(
+    'track',
+    'ViewContent',
+    {
+        content_name:'ClipForge Studio',
+        content_category:'Software Video Clipper',
+        value:15000,
+        currency:'IDR'
+    }
+);
+
+</script>
+
+
+<noscript>
+
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=1062756373399058&ev=PageView&noscript=1"
+/>
+
+</noscript>
+
+<!-- END META PIXEL -->
+
+
 <style>
 
 *{
@@ -22,8 +101,14 @@ html{
 body{
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
+
     background:
-    radial-gradient(circle at top left,#162454,#050916 45%);
+    radial-gradient(
+        circle at top left,
+        #162454,
+        #050916 45%
+    );
+
     color:#fff;
 }
 
@@ -32,6 +117,7 @@ body{
     max-width:1100px;
     margin:auto;
 }
+
 
 /* =========================
 HEADER
@@ -66,6 +152,7 @@ header{
     border-radius:50px;
     font-size:12px;
 }
+
 
 /* =========================
 HERO
@@ -142,6 +229,7 @@ button,
         #6755ff,
         #9c39ff
     );
+
     color:#fff;
 }
 
@@ -164,6 +252,7 @@ button,
     display:block;
 }
 
+
 /* =========================
 BOX
 ========================= */
@@ -174,6 +263,7 @@ BOX
         #0c1528,
         #07101f
     );
+
     border:1px solid #24324c;
     border-radius:22px;
     padding:25px;
@@ -188,6 +278,7 @@ BOX
     color:#9aa7bd;
     line-height:1.6;
 }
+
 
 /* =========================
 DEMO
@@ -206,6 +297,7 @@ DEMO
     border-radius:18px;
     overflow:hidden;
     border:1px solid #263149;
+
     display:flex;
     align-items:center;
     justify-content:center;
@@ -230,14 +322,25 @@ DEMO
 
 .demo-lock{
     display:none;
+
     position:absolute;
     inset:0;
-    background:rgba(4,8,18,.95);
+
+    background:rgba(
+        4,
+        8,
+        18,
+        .95
+    );
+
     backdrop-filter:blur(7px);
+
     align-items:center;
     justify-content:center;
     text-align:center;
+
     padding:25px;
+
     z-index:10;
 }
 
@@ -300,11 +403,13 @@ DEMO
 .demo-button{
     width:100%;
     margin-top:15px;
+
     background:linear-gradient(
         90deg,
         #25c7b9,
         #6856ff
     );
+
     color:#fff;
 }
 
@@ -313,6 +418,7 @@ DEMO
     color:#8c94a5;
     cursor:not-allowed;
 }
+
 
 /* =========================
 FEATURE
@@ -340,6 +446,7 @@ FEATURE
     margin:10px 0;
 }
 
+
 /* =========================
 BUY
 ========================= */
@@ -349,18 +456,29 @@ BUY
     padding:40px 20px;
 }
 
+
 /* =========================
-MODAL QRIS
+PAYMENT MODAL
 ========================= */
 
 .modal{
     display:none;
+
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,.8);
+
+    background:rgba(
+        0,
+        0,
+        0,
+        .8
+    );
+
     z-index:1000;
+
     align-items:center;
     justify-content:center;
+
     padding:15px;
 }
 
@@ -373,10 +491,13 @@ MODAL QRIS
     max-width:480px;
     max-height:94vh;
     overflow:auto;
+
     background:#0c1528;
     border:1px solid #34425f;
+
     border-radius:20px;
     padding:22px;
+
     position:relative;
 }
 
@@ -384,12 +505,17 @@ MODAL QRIS
     position:absolute;
     right:12px;
     top:12px;
+
     width:37px;
     height:37px;
+
     border-radius:10px;
+
     background:#17223a;
     color:#fff;
+
     padding:0;
+
     font-size:20px;
 }
 
@@ -397,20 +523,29 @@ MODAL QRIS
     width:100%;
     max-width:350px;
     display:block;
+
     margin:18px auto;
+
     border-radius:12px;
+
     background:#fff;
 }
 
 .wa{
     display:block;
     width:100%;
+
     text-align:center;
+
     background:#21c978;
     color:#06150e;
+
     padding:15px;
+
     border-radius:12px;
+
     font-weight:bold;
+
     text-decoration:none;
 }
 
@@ -420,25 +555,38 @@ MODAL QRIS
     line-height:1.6;
 }
 
+
 /* =========================
-NOTIFICATION
+TOAST
 ========================= */
 
 .toast{
     display:none;
+
     position:fixed;
+
     bottom:25px;
     left:50%;
+
     transform:translateX(-50%);
+
     padding:12px 18px;
+
     border-radius:50px;
+
     background:#18243d;
+
     border:1px solid #3c4f75;
+
     color:white;
+
     z-index:2000;
+
     font-weight:bold;
+
     font-size:13px;
 }
+
 
 /* =========================
 FOOTER
@@ -446,10 +594,14 @@ FOOTER
 
 footer{
     padding:30px;
+
     text-align:center;
+
     color:#7c889e;
+
     font-size:12px;
 }
+
 
 /* =========================
 MOBILE
@@ -475,6 +627,7 @@ MOBILE
 
 }
 
+
 @media(max-width:480px){
 
     h1{
@@ -496,6 +649,7 @@ MOBILE
 }
 
 </style>
+
 </head>
 
 
@@ -503,6 +657,7 @@ MOBILE
 
 
 <div class="container">
+
 
 <header>
 
@@ -517,6 +672,7 @@ by MOI Apps Studio
 </span>
 
 </div>
+
 
 <div class="badge">
 ⚡ Coba 1x Gratis
@@ -534,11 +690,14 @@ HERO
 
 <section class="hero">
 
+
 <div>
+
 
 <div class="kicker">
 VIDEO CLIPPER PRAKTIS
 </div>
+
 
 <h1>
 
@@ -552,14 +711,19 @@ Lebih Cepat
 
 </h1>
 
+
 <p class="subtitle">
 
-Untuk YouTube Shorts, TikTok,
-Instagram Reels dan Facebook.
+Untuk YouTube Shorts,
+TikTok,
+Instagram Reels
+dan Facebook.
 
-Coba terlebih dahulu sebelum membeli.
+Coba terlebih dahulu
+sebelum membeli.
 
 </p>
+
 
 <div class="price">
 
@@ -573,6 +737,7 @@ sekali bayar
 
 
 <div class="buttons">
+
 
 <button
 class="primary"
@@ -591,18 +756,24 @@ onclick="openPayment()">
 
 </button>
 
-</div>
 
 </div>
+
+
+</div>
+
 
 
 <div class="hero-image">
+
 
 <img
 src="app.png"
 alt="Tampilan ClipForge Studio">
 
+
 </div>
+
 
 </section>
 
@@ -616,28 +787,42 @@ DEMO
 class="box"
 id="demo">
 
+
 <h2>
 Coba ClipForge 1x Gratis
 </h2>
 
+
 <p class="muted">
 
-Upload video dari HP atau komputer.
+Upload video dari HP
+atau komputer.
 
 Putar video,
 tentukan titik awal menggunakan
-<strong>Set In</strong>
+
+<strong>
+Set In
+</strong>
 
 dan titik akhir menggunakan
-<strong>Set Out</strong>.
+
+<strong>
+Set Out
+</strong>.
 
 Kemudian tekan
-<strong>Preview Demo</strong>.
+
+<strong>
+Preview Demo
+</strong>.
 
 </p>
 
 
+
 <div class="demo-grid">
+
 
 
 <div>
@@ -650,20 +835,27 @@ Kemudian tekan
 class="empty"
 id="empty">
 
+
 <div class="empty-icon">
 🎬
 </div>
+
 
 <h3>
 Buka Video Anda
 </h3>
 
+
 <p>
+
 Video diproses langsung
 di browser Anda.
+
 </p>
 
+
 </div>
+
 
 
 <video
@@ -674,21 +866,26 @@ playsinline>
 
 
 
-<!-- LOCK DEMO -->
+<!-- DEMO TERKUNCI -->
+
 
 <div
 class="demo-lock"
 id="demoLock">
 
+
 <div>
+
 
 <div class="lock-icon">
 🔒
 </div>
 
+
 <h2>
 Demo gratis sudah digunakan
 </h2>
+
 
 <p class="muted">
 
@@ -696,6 +893,7 @@ Buka ClipForge versi penuh
 hanya Rp15.000 sekali bayar.
 
 </p>
+
 
 <button
 class="primary"
@@ -705,7 +903,9 @@ Buka Versi Full Rp15.000
 
 </button>
 
+
 </div>
+
 
 </div>
 
@@ -721,6 +921,7 @@ accept="video/*"
 hidden>
 
 
+
 <div class="control-buttons">
 
 
@@ -733,6 +934,7 @@ onclick="openVideo()">
 </button>
 
 
+
 <button
 class="secondary"
 onclick="setIn()">
@@ -740,6 +942,7 @@ onclick="setIn()">
 🟢 Set In
 
 </button>
+
 
 
 <button
@@ -761,31 +964,39 @@ onclick="setOut()">
 <div>
 
 
+
 <div class="time-grid">
 
 
 <div class="time-box">
 
+
 <span>
 IN
 </span>
+
 
 <strong id="inTime">
 00:00.00
 </strong>
 
+
 </div>
 
 
+
 <div class="time-box">
+
 
 <span>
 OUT
 </span>
 
+
 <strong id="outTime">
 00:00.00
 </strong>
+
 
 </div>
 
@@ -795,23 +1006,32 @@ OUT
 
 
 <div class="step">
+
 
 <strong>
 1. Upload video
 </strong>
 
+
 <span class="muted">
-Pilih file video dari HP atau komputer.
+
+Pilih file video
+dari HP atau komputer.
+
 </span>
+
 
 </div>
 
 
+
 <div class="step">
+
 
 <strong>
 2. Tentukan titik IN
 </strong>
+
 
 <span class="muted">
 
@@ -821,37 +1041,47 @@ kemudian tekan Set In.
 
 </span>
 
+
 </div>
 
 
+
 <div class="step">
+
 
 <strong>
 3. Tentukan titik OUT
 </strong>
 
+
 <span class="muted">
 
-Geser video ke bagian akhir klip,
+Geser video
+ke bagian akhir klip,
 kemudian tekan Set Out.
 
 </span>
 
+
 </div>
 
 
+
 <div class="step">
+
 
 <strong>
 4. Preview
 </strong>
 
+
 <span class="muted">
 
-Tekan Preview Demo untuk
-mencoba hasil pemotongan.
+Tekan Preview Demo
+untuk mencoba hasil pemotongan.
 
 </span>
+
 
 </div>
 
@@ -880,15 +1110,17 @@ Demo hanya dapat digunakan
 
 </div>
 
+
 </section>
 
 
 
 <!-- =========================
-FEATURES
+FEATURE
 ========================= -->
 
 <section class="box">
+
 
 <h2>
 Kenapa ClipForge?
@@ -896,6 +1128,7 @@ Kenapa ClipForge?
 
 
 <div class="features">
+
 
 
 <div class="feature">
@@ -953,7 +1186,9 @@ Konten Pendek
 <span class="muted">
 
 Cocok untuk Shorts,
-TikTok, Reels dan Facebook.
+TikTok,
+Reels
+dan Facebook.
 
 </span>
 
@@ -983,6 +1218,7 @@ hanya Rp15.000.
 
 </div>
 
+
 </section>
 
 
@@ -993,9 +1229,13 @@ BUY
 
 <section class="box buy">
 
+
 <h2>
+
 Sudah Cocok dengan ClipForge?
+
 </h2>
+
 
 <p class="muted">
 
@@ -1005,15 +1245,20 @@ untuk kebutuhan konten Anda.
 
 </p>
 
+
 <div class="price">
 
+
 Rp15.000
+
 
 <small>
 sekali bayar
 </small>
 
+
 </div>
+
 
 
 <button
@@ -1024,6 +1269,7 @@ onclick="openPayment()">
 
 </button>
 
+
 </section>
 
 
@@ -1032,7 +1278,7 @@ onclick="openPayment()">
 
 
 <!-- =========================
-PAYMENT MODAL
+PAYMENT
 ========================= -->
 
 <div
@@ -1053,9 +1299,11 @@ onclick="closePayment()">
 </button>
 
 
+
 <h2>
 Pembayaran ClipForge
 </h2>
+
 
 
 <p class="muted">
@@ -1083,8 +1331,12 @@ alt="QRIS ClipForge">
 
 <a
 class="wa"
+
 href="https://wa.me/628197653003?text=Halo%20MOI%20Apps%20Studio%2C%20saya%20sudah%20melakukan%20pembayaran%20ClipForge%20Rp15.000.%20Saya%20akan%20kirim%20bukti%20pembayarannya."
-target="_blank">
+
+target="_blank"
+
+onclick="trackWhatsApp()">
 
 💬 Saya Sudah Bayar — Kirim Bukti
 
@@ -1094,8 +1346,8 @@ target="_blank">
 <p class="note">
 
 Setelah pembayaran diverifikasi,
-akses ClipForge Full akan diberikan
-melalui WhatsApp.
+akses ClipForge Full
+akan diberikan melalui WhatsApp.
 
 </p>
 
@@ -1125,51 +1377,71 @@ by MOI Apps Studio
 
 <script>
 
+
 /* =========================
 SETTING
 ========================= */
 
+
 const DEMO_KEY =
-"clipforge_demo_used_v2";
+"clipforge_demo_used_v3";
+
+
+const DEMO_STARTED_KEY =
+"clipforge_demo_started_v3";
 
 
 const video =
-document.getElementById("video");
+document.getElementById(
+    "video"
+);
 
 
 const fileInput =
-document.getElementById("videoFile");
+document.getElementById(
+    "videoFile"
+);
 
 
 const empty =
-document.getElementById("empty");
+document.getElementById(
+    "empty"
+);
 
 
 const demoLock =
-document.getElementById("demoLock");
+document.getElementById(
+    "demoLock"
+);
 
 
 const previewButton =
-document.getElementById("previewButton");
+document.getElementById(
+    "previewButton"
+);
 
 
 const inDisplay =
-document.getElementById("inTime");
+document.getElementById(
+    "inTime"
+);
 
 
 const outDisplay =
-document.getElementById("outTime");
+document.getElementById(
+    "outTime"
+);
 
 
-let videoReady = false;
+let videoReady=false;
 
-let inPoint = 0;
+let inPoint=0;
 
-let outPoint = 0;
+let outPoint=0;
 
-let previewTimer = null;
+let previewTimer=null;
 
-let objectURL = null;
+let objectURL=null;
 
 
 
@@ -1177,10 +1449,14 @@ let objectURL = null;
 FORMAT WAKTU
 ========================= */
 
+
 function formatTime(seconds){
 
+
     if(
-        !Number.isFinite(seconds)
+        !Number.isFinite(
+            seconds
+        )
     ){
 
         return "00:00.00";
@@ -1189,22 +1465,38 @@ function formatTime(seconds){
 
 
     const minutes =
-    Math.floor(seconds / 60);
+    Math.floor(
+        seconds / 60
+    );
 
 
     const secs =
-    (seconds % 60)
+    (
+        seconds % 60
+    )
     .toFixed(2)
-    .padStart(5,"0");
+    .padStart(
+        5,
+        "0"
+    );
 
 
     return (
+
         String(minutes)
-        .padStart(2,"0")
+        .padStart(
+            2,
+            "0"
+        )
+
         +
+
         ":"
+
         +
+
         secs
+
     );
 
 }
@@ -1215,13 +1507,20 @@ function formatTime(seconds){
 STATUS DEMO
 ========================= */
 
+
 function demoUsed(){
 
     return (
+
         localStorage
-        .getItem(DEMO_KEY)
+        .getItem(
+            DEMO_KEY
+        )
+
         ===
+
         "1"
+
     );
 
 }
@@ -1230,12 +1529,16 @@ function demoUsed(){
 
 function lockDemo(){
 
+
     demoLock
     .classList
-    .add("show");
+    .add(
+        "show"
+    );
 
 
-    previewButton.disabled = true;
+    previewButton.disabled =
+    true;
 
 
     previewButton.innerHTML =
@@ -1247,7 +1550,9 @@ function lockDemo(){
 
 function checkDemo(){
 
-    if(demoUsed()){
+    if(
+        demoUsed()
+    ){
 
         lockDemo();
 
@@ -1258,18 +1563,45 @@ function checkDemo(){
 
 
 /* =========================
-SCROLL DEMO
+SCROLL KE DEMO
 ========================= */
+
 
 function goDemo(){
 
+
     document
-    .getElementById("demo")
+    .getElementById(
+        "demo"
+    )
     .scrollIntoView({
 
-        behavior:"smooth"
+        behavior:
+        "smooth"
 
     });
+
+
+    /*
+    TRACK KLIK TOMBOL DEMO
+    */
+
+
+    if(
+        typeof fbq
+        ===
+        "function"
+    ){
+
+        fbq(
+
+            "trackCustom",
+
+            "ClipForgeDemoButtonClicked"
+
+        );
+
+    }
 
 }
 
@@ -1279,9 +1611,13 @@ function goDemo(){
 BUKA VIDEO
 ========================= */
 
+
 function openVideo(){
 
-    if(demoUsed()){
+
+    if(
+        demoUsed()
+    ){
 
         lockDemo();
 
@@ -1297,27 +1633,35 @@ function openVideo(){
 
 
 fileInput.addEventListener(
+
 "change",
+
 function(){
+
 
     const file =
     this.files[0];
 
 
-    if(!file){
+    if(
+        !file
+    ){
 
         return;
 
     }
+
 
 
     if(
         !file.type
-        .startsWith("video/")
+        .startsWith(
+            "video/"
+        )
     ){
 
         alert(
-        "Silakan pilih file video."
+            "Silakan pilih file video."
         );
 
         return;
@@ -1325,20 +1669,27 @@ function(){
     }
 
 
-    if(objectURL){
+
+    if(
+        objectURL
+    ){
 
         URL.revokeObjectURL(
-        objectURL
+            objectURL
         );
 
     }
 
 
+
     objectURL =
-    URL.createObjectURL(file);
+    URL.createObjectURL(
+        file
+    );
 
 
-    videoReady = false;
+    videoReady =
+    false;
 
 
     video.src =
@@ -1356,14 +1707,17 @@ function(){
     video.load();
 
 
+
     video.onloadedmetadata =
     function(){
 
 
-        videoReady = true;
+        videoReady =
+        true;
 
 
-        inPoint = 0;
+        inPoint =
+        0;
 
 
         outPoint =
@@ -1371,30 +1725,107 @@ function(){
 
 
         inDisplay.textContent =
-        formatTime(inPoint);
+        formatTime(
+            inPoint
+        );
 
 
         outDisplay.textContent =
-        formatTime(outPoint);
+        formatTime(
+            outPoint
+        );
 
 
         showToast(
-        "Video siap. Tentukan Set In dan Set Out."
+
+            "Video siap. Tentukan Set In dan Set Out."
+
         );
 
+
+
+        /* =========================
+        META EVENT
+        DEMO STARTED
+        ========================= */
+
+
+        if(
+
+            localStorage
+            .getItem(
+                DEMO_STARTED_KEY
+            )
+
+            !==
+
+            "1"
+
+        ){
+
+
+            if(
+                typeof fbq
+                ===
+                "function"
+            ){
+
+                fbq(
+
+                    "trackCustom",
+
+                    "ClipForgeDemoStarted",
+
+                    {
+
+                        product:
+                        "ClipForge Studio",
+
+                        value:
+                        15000,
+
+                        currency:
+                        "IDR"
+
+                    }
+
+                );
+
+            }
+
+
+            localStorage
+            .setItem(
+
+                DEMO_STARTED_KEY,
+
+                "1"
+
+            );
+
+        }
+
+
     };
+
 
 
     video.onerror =
     function(){
 
-        videoReady = false;
+
+        videoReady =
+        false;
+
 
         alert(
-        "Video tidak dapat dibuka. Coba file video lain."
+
+            "Video tidak dapat dibuka. Coba file video lain."
+
         );
 
     };
+
 
 });
 
@@ -1404,9 +1835,13 @@ function(){
 SET IN
 ========================= */
 
+
 function setIn(){
 
-    if(demoUsed()){
+
+    if(
+        demoUsed()
+    ){
 
         lockDemo();
 
@@ -1415,10 +1850,14 @@ function setIn(){
     }
 
 
-    if(!videoReady){
+    if(
+        !videoReady
+    ){
 
         alert(
-        "Buka video terlebih dahulu."
+
+            "Buka video terlebih dahulu."
+
         );
 
         return;
@@ -1426,40 +1865,59 @@ function setIn(){
     }
 
 
+
     inPoint =
     Number(
+
         video.currentTime
+
         ||
+
         0
+
     );
 
 
+
     if(
-        outPoint <=
+        outPoint
+        <=
         inPoint
     ){
 
         outPoint =
         Math.min(
+
             video.duration,
+
             inPoint + 3
+
         );
 
     }
 
 
+
     inDisplay.textContent =
-    formatTime(inPoint);
+    formatTime(
+        inPoint
+    );
 
 
     outDisplay.textContent =
-    formatTime(outPoint);
+    formatTime(
+        outPoint
+    );
 
 
     showToast(
-    "✅ IN diset di "
-    +
-    formatTime(inPoint)
+
+        "✅ IN diset di "
+        +
+        formatTime(
+            inPoint
+        )
+
     );
 
 }
@@ -1470,9 +1928,13 @@ function setIn(){
 SET OUT
 ========================= */
 
+
 function setOut(){
 
-    if(demoUsed()){
+
+    if(
+        demoUsed()
+    ){
 
         lockDemo();
 
@@ -1481,37 +1943,51 @@ function setOut(){
     }
 
 
-    if(!videoReady){
+    if(
+        !videoReady
+    ){
 
         alert(
-        "Buka video terlebih dahulu."
+
+            "Buka video terlebih dahulu."
+
         );
 
         return;
 
     }
+
 
 
     const current =
     Number(
+
         video.currentTime
+
         ||
+
         0
+
     );
 
 
+
     if(
-        current <=
+        current
+        <=
         inPoint
     ){
 
         alert(
-        "Geser atau putar video setelah titik IN, kemudian tekan Set Out."
+
+            "Geser atau putar video setelah titik IN, kemudian tekan Set Out."
+
         );
 
         return;
 
     }
+
 
 
     outPoint =
@@ -1519,13 +1995,19 @@ function setOut(){
 
 
     outDisplay.textContent =
-    formatTime(outPoint);
+    formatTime(
+        outPoint
+    );
 
 
     showToast(
-    "✅ OUT diset di "
-    +
-    formatTime(outPoint)
+
+        "✅ OUT diset di "
+        +
+        formatTime(
+            outPoint
+        )
+
     );
 
 }
@@ -1536,9 +2018,13 @@ function setOut(){
 PREVIEW DEMO
 ========================= */
 
+
 function previewDemo(){
 
-    if(demoUsed()){
+
+    if(
+        demoUsed()
+    ){
 
         lockDemo();
 
@@ -1547,10 +2033,15 @@ function previewDemo(){
     }
 
 
-    if(!videoReady){
+
+    if(
+        !videoReady
+    ){
 
         alert(
-        "Buka video terlebih dahulu."
+
+            "Buka video terlebih dahulu."
+
         );
 
         return;
@@ -1558,131 +2049,228 @@ function previewDemo(){
     }
 
 
+
     if(
-        outPoint <=
+        outPoint
+        <=
         inPoint
     ){
 
         alert(
-        "Titik OUT harus setelah titik IN."
+
+            "Titik OUT harus setelah titik IN."
+
         );
 
         return;
 
     }
+
 
 
     const duration =
-    outPoint - inPoint;
+    outPoint
+    -
+    inPoint;
 
 
-    if(duration < 0.3){
+
+    if(
+        duration
+        <
+        0.3
+    ){
 
         alert(
-        "Durasi klip terlalu pendek."
+
+            "Durasi klip terlalu pendek."
+
         );
 
         return;
 
     }
+
 
 
     video.currentTime =
     inPoint;
 
 
+
     const playPromise =
     video.play();
 
 
-    if(playPromise){
+
+    if(
+        playPromise
+    ){
 
         playPromise
-        .catch(function(){
+        .catch(
+
+        function(){
 
             alert(
-            "Tekan tombol Play pada video kemudian coba kembali."
+
+                "Tekan tombol Play pada video kemudian coba kembali."
+
             );
 
-        });
+        }
+
+        );
 
     }
 
 
+
     clearInterval(
-    previewTimer
+        previewTimer
     );
+
 
 
     previewTimer =
     setInterval(
+
     function(){
 
 
         if(
+
             video.currentTime
             >=
             outPoint
+
             ||
+
             video.ended
+
         ){
 
+
             clearInterval(
-            previewTimer
+                previewTimer
             );
 
 
             video.pause();
 
 
+
+            /* SIMPAN STATUS DEMO */
+
+
             localStorage
             .setItem(
+
                 DEMO_KEY,
+
                 "1"
+
             );
+
+
+
+            /* =========================
+            META EVENT
+            DEMO COMPLETED
+            ========================= */
+
+
+            if(
+                typeof fbq
+                ===
+                "function"
+            ){
+
+                fbq(
+
+                    "trackCustom",
+
+                    "ClipForgeDemoCompleted",
+
+                    {
+
+                        content_name:
+                        "ClipForge Studio",
+
+                        clip_duration:
+                        Number(
+                            duration.toFixed(
+                                2
+                            )
+                        ),
+
+                        value:
+                        15000,
+
+                        currency:
+                        "IDR"
+
+                    }
+
+                );
+
+            }
+
 
 
             showToast(
-            "✅ Demo selesai"
+
+                "✅ Demo selesai"
+
             );
+
 
 
             setTimeout(
-            lockDemo,
-            700
+
+                lockDemo,
+
+                700
+
             );
+
 
         }
 
 
-    },100);
+    },
+
+    100
+
+    );
 
 }
 
 
 
 /* =========================
-QRIS
+BUKA PEMBAYARAN
 ========================= */
 
+
 function openPayment(){
+
 
     document
     .getElementById(
         "paymentModal"
     )
     .classList
-    .add("show");
+    .add(
+        "show"
+    );
 
 
-    /*
-    META PIXEL
 
-    Jika nanti Meta Pixel
-    sudah dipasang,
-    kode event berikut
-    otomatis aktif.
-    */
+    /* =========================
+    META EVENT
+    INITIATE CHECKOUT
+    ========================= */
 
 
     if(
@@ -1692,15 +2280,27 @@ function openPayment(){
     ){
 
         fbq(
+
             "track",
+
             "InitiateCheckout",
+
             {
 
-                value:15000,
+                content_name:
+                "ClipForge Studio",
 
-                currency:"IDR"
+                content_category:
+                "Software",
+
+                value:
+                15000,
+
+                currency:
+                "IDR"
 
             }
+
         );
 
     }
@@ -1709,20 +2309,36 @@ function openPayment(){
 
 
 
+/* =========================
+TUTUP PAYMENT
+========================= */
+
+
 function closePayment(){
+
 
     document
     .getElementById(
         "paymentModal"
     )
     .classList
-    .remove("show");
+    .remove(
+        "show"
+    );
 
 }
 
 
 
-function backgroundClose(event){
+/* =========================
+KLIK AREA LUAR MODAL
+========================= */
+
+
+function backgroundClose(
+    event
+){
+
 
     if(
         event.target.id
@@ -1739,13 +2355,68 @@ function backgroundClose(event){
 
 
 /* =========================
+TRACK WHATSAPP
+========================= */
+
+
+function trackWhatsApp(){
+
+
+    if(
+        typeof fbq
+        ===
+        "function"
+    ){
+
+        fbq(
+
+            "track",
+
+            "Contact",
+
+            {
+
+                content_name:
+                "ClipForge WhatsApp",
+
+                value:
+                15000,
+
+                currency:
+                "IDR"
+
+            }
+
+        );
+
+
+
+        fbq(
+
+            "trackCustom",
+
+            "ClipForgePaymentConfirmationClicked"
+
+        );
+
+    }
+
+}
+
+
+
+/* =========================
 TOAST
 ========================= */
+
 
 let toastTimer;
 
 
-function showToast(message){
+function showToast(
+    message
+){
+
 
     const toast =
     document
@@ -1763,52 +2434,37 @@ function showToast(message){
 
 
     clearTimeout(
-    toastTimer
+        toastTimer
     );
 
 
     toastTimer =
     setTimeout(
+
     function(){
+
 
         toast.style.display =
         "none";
 
-    },1800);
+
+    },
+
+    1800
+
+    );
 
 }
 
 
 
 /* =========================
-JIKA USER PINDAH WAKTU
-SAAT PREVIEW
+CEK DEMO SAAT WEB DIBUKA
 ========================= */
 
-video.addEventListener(
-"seeked",
-function(){
-
-    if(
-        video.currentTime
-        <
-        0
-    ){
-
-        video.currentTime =
-        0;
-
-    }
-
-});
-
-
-
-/* =========================
-CHECK DEMO SAAT HALAMAN BUKA
-========================= */
 
 checkDemo();
+
 
 </script>
 
